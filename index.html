@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/loginScreen.css" />
+    <link rel="shortcut icon" href="./assets/images/login_96.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./js/LoginScreen.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+ <!-- Container class -->
+<div class="container">
+    <main>
+      <!-- Form for html -->
+        <div class="formContainer">
+            <header>
+                <img src="./assets/images/logo-no-background.png" alt="glasses">
+            </header>
+            <form id="regform" method="get" action="">
+
+                <h1>Login</h1>
+                <div class="firstSubBlock">
+                    <p>E-Mail: </p>
+                    <input type="text" id="email" />
+                    <i class="fas fa-envelope" id="emailIcon"></i>
+                </div>
+                <span class="error" id="err-email">* Invalid Email</span>
+
+
+                <div class="firstSubBlock">
+                    <p>Password : </p>
+                    <input type="password" id="password">
+                    <i class="fa-solid fa-eye" id="eye"></i>
+                </div>
+                <span class="error" id="err-passwd">* Invalid Password</span>
+                <h5 id="openDialog">Forgot Password ?</h5>
+                <!-- <button id="openDialog">Update details</button> -->
+                <p class="creatAccount"><a href="./screens/signup.html">Don't have an account. Creat Account?</a></p>
+                <div class="submitBlock">
+                    <input id="login" type="submit" value="Submit" class="submitButton" />
+                </div>
+            </form>
+
+            
+         <!-- Success Dialog -->
+            <div id="id01" class="modal">
+                <form class="modal-content" action="/action_page.php">
+                  <div class="container">
+                    <h1>You are successfully logged in</h1>
+                    <div class="clearfix">
+                      <button type="button" class="deletebtn" onclick="goToHome()">Ok</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+           
+        </div>
+    </main>
+</div>
+</body>
+
+</html>

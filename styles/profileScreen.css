@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+main {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+ height: 100px;
+  float: left;
+ }
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+
+/* header design css */
+
+
+img {
+    height: 90px;
+    float: left;
+}
+
+/* main body section */
+
+
+#parentView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.profileContentSize {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+address {
+    align-items: center;
+    margin: 10px 40px 10px 0px;
+}
+
+p {
+    text-align: left;
+    padding-top: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.photoView {
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    align-self: center;
+    width: 300px;
+}
+
+.inside_view {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 16px;
+}
+
+.inside_view img {
+    height: 200px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.subView {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+address {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tableLayout {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 16px;
+
+}
+
+td {
+    /* padding: .1em .7em; */
+    text-align: center;
+    border: 1px solid black;
+    height: 50px;
+}
+
+tbody {
+    background-color: #FAFAFA;
+}
+
+th {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    /* padding: .0.5em .7em; */
+}
+
+thead {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bottomView {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.focusRewards {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    margin: 8px;
+}
+
+.detailsView img {
+    margin-top: 50px;
+
+}
+
+h5 {
+    align-self: center;
+    display: flex;
+    margin-top: 10px;
+    color: red;
+}
+
+.discounts p {
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 24px;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    background-color: whitesmoke;
+    padding: 24px;
+    margin: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.rowContainer img {
+    width: 30px;
+    height: 30px;
+    padding: 24px;
+}
+
+.rowContainer p {
+    font-weight: bold;
+    align-self: center;
+    text-align: left;
+    margin-top: 4px;
+    margin-right: 24px;
+    margin-left: 8px;
+    color: black;
+}
+
+.rowContainer label {
+    text-align: right;
+}
+
+.focusInsideContainer {
+    border: 0.5px solid red;
+    width: auto;
+    margin: 30px;
+    padding: 24px;
+    width: 200px;
+}
+
+.lastOrderView {
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    margin: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prescriptionView {
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    margin: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.detailsView button {
+    display: flex;
+    align-self: center;
+    margin-top: 16px;
+    height: 40px;
+    padding: 24px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: lavender;
+    border: 0px solid white;
+    border-radius: 10px;
+    color: gray;
+    font-weight: 600;
+}
+
+
+/* footer body css */
+
+.footerContainer {
+    height: 400px;
+    width: 100%;
+}
+
+.footer-up {
+    flex-direction: column;
+    size: 20;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: left;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.footerImg {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.footerMenu1 {
+    grid-column-start: 2;
+}
+
+.footer-up ul,
+li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+/* g. Footer bottom section */
+.footer-bottom {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+
+.zoom {
+    transition: transform .1s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+
+
+@media only screen and (min-width: 850px) {
+
+
+
+    main {
+        background: gainsboro;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_container {
+        background: gainsboro;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+    #parentView {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px auto;
+        margin-left: 50px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .photoView {
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: white;
+        text-align: center;
+        align-self: center;
+    }
+
+
+    .subView {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        margin-left: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tableLayout {
+        display: flex;
+        flex-direction: column;
+        margin-left: 24px;
+        margin-right: 24px;
+
+    }
+
+    .tableDiv {
+        height: auto;
+        width: auto;
+    }
+
+
+    td {
+        padding: .2em .7em;
+        text-align: center;
+        border: 1px solid black;
+        height: 50px;
+    }
+
+    th {
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: .2em .7em;
+    }
+
+
+    .bottomView {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .focusRewards {
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 24px;
+        margin: 24px;
+    }
+
+    .detailsView img {
+        margin-top: 50px;
+
+    }
+
+    h5 {
+        align-self: center;
+        display: flex;
+        margin-top: 10px;
+        color: red;
+    }
+
+    .discounts p {
+        font-weight: bold;
+        color: #2c3e50;
+        margin: 24px;
+    }
+
+    .rowContainer {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        background-color: whitesmoke;
+        padding: 24px;
+        margin: 24px;
+        align-items: center;
+        justify-content: flex-start;
+        width: 500px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        transition: transform .1s;
+    }
+
+
+    .rowContainer:hover {
+        -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+        /* Safari 3-8 */
+        transform: scale(1.Q);
+    }
+
+    .rowContainer img {
+        width: 30px;
+        height: 30px;
+        padding: 24px;
+    }
+
+    .rowContainer p {
+        font-weight: bold;
+        align-self: center;
+        text-align: left;
+        margin-top: 4px;
+        margin-right: 84px;
+        width: 250px;
+        margin-left: 8px;
+        color: black;
+    }
+
+    .rowContainer label {
+        text-align: right;
+    }
+
+    .focusInsideContainer {
+        border: 0.5px solid red;
+        width: auto;
+        margin: 30px;
+        padding: 24px;
+        width: 200px;
+    }
+
+    .lastOrderView {
+        background-color: white;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        height: 80px;
+        margin: 8px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .prescriptionView {
+        background-color: white;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        height: 150px;
+        margin: 8px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+    .detailsView button {
+        display: flex;
+        align-self: center;
+        margin-top: 16px;
+        height: 40px;
+        padding: 24px;
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+        background-color: lavender;
+        border: 0px solid white;
+        border-radius: 10px;
+        color: gray;
+        font-weight: 600;
+    }
+
+    .footerContainer {
+        height: auto;
+        width: 100%;
+        bottom: 0px;
+        display: grid;
+        grid-template-columns: 20%, 20%, 20%, 20%, 20%;
+        margin-bottom: 0px;
+    }
+
+
+    .footer-up {
+        flex-direction: row;
+        size: 20;
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        text-align: left;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .footerImg {
+        margin-left: 50px;
+        height: 120px;
+    }
+
+    .footerMenu1 {
+        grid-column-start: 2;
+    }
+
+    .footer-up ul,
+    li {
+        list-style-type: none;
+        margin-top: 10px;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+
+}

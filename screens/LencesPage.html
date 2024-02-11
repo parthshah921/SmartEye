@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LencesPage</title>
+    <link rel="stylesheet" href="../styles/lenses.css">
+    <link rel="stylesheet" href="../styles/header.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerView">
+            <header>
+                <img src="../assets/images/logo-no-background.png" alt="glasses">
+            </header>
+        </div>
+
+        <nav>
+            <div class="topNavBar">
+                <div class="dropdown">
+                    <button class="dropbtn">EyeGlasses
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../screens/HomeScreen.html">Men's Eyeglasses</a>
+                        <a href="../screens/HomeScreen.html">Women's Eyeglasses</a>
+                        <a href="../screens/HomeScreen.html">Kid's Eyeglasses</a>
+                        <a href="#">Featured</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sunglasses
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../screens/sunglasses.html">Prescription Sunglasses</a>
+                        <a href="../screens/sunglasses.html">Women's Sunglasses</a>
+                        <a href="../screens/sunglasses.html">Men's SunGlasses</a>
+                        <a href="#">Kid's SunGlasses</a>
+                        <a href="#">Featured</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Lenses
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../screens/LencesPage.html">Blue light Glasses</a>
+                        <a href="../screens/LencesPage.html">Bifocal Lenses</a>
+                        <a href="../screens/LencesPage.html">Progress Lenses</a>
+                        <a href="#">Prism Lenses</a>
+                        <a href="#">Coating</a>
+                    </div>
+                </div>
+                <a href="../screens/offerpage.html" style="color: brown;">Offers </a>
+            </div>
+            <div class="headerButtons">
+                <div class="dropdown">
+                    <button id="signInButton" class="dropbtn" onclick="openForm()">
+                        SignIn
+                    </button>
+
+                    <div id="myForm" class="dropdown-content">
+                        <form action="/action_page.php" class="form-container">
+                            <h1 style="margin-bottom:8px">Login</h1>
+
+                            <label for="email"><b style="margin-top: 8px">Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b style="margin-top: 8px">Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                </div>
+                <button onclick="openCartPage()">
+                    <img src="../assets/images/cart_96.png">
+                </button>
+                <button onclick="openProfilePage()">
+                    <img src="../assets/images/user.png">
+                </button>
+                <button onclick="openWishListPage()">
+                    <img src="../assets/images/wishlist.png">
+                </button>
+                <button onclick="openHelpPage()">
+                    <img src="../assets/images/help.png">
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <div class="anti-banner">
+                <div class="banner-container banner-img-box clearfix">
+                    <div class="banner-text">
+                        <h1 class="banner-title">
+                            Anti-Reflective Coating for Anti Glare Glasses </h1>
+                        <p class="banner-text-content write-content">
+                            <span class="write-info">Reviewed by : Dr. Matthew Miller, OD on May 19th, 2022</span>
+                        </p>
+                        <p class="banner-text-content">
+                            An anti-reflective (also known as anti-glare) coating prevents reflections from appearing on
+                            both the inside and outside of your eyeglass or sunglass antis. No reflections on your antis
+                            means more light is reaching your eyes, which inevitably improves your vision. </p>
+                        <p class="banner-text-content">
+                            Anti-reflective coating glasses antis are practically invisible, so your eyes will look
+                            better and your stylish frames can take center stage. </p>
+                    </div>
+                    <div class="banner-img">
+                        <img id="slide" src="../assets/images/antilence/hepburn.png" alt="Casting on the hepburn" />
+                        <div id="slides">
+                            <img src="../assets/images/antilence/Amity.png" alt="Casting on the Amity" />
+                            <img src="../assets/images/antilence/st.michel.png" alt="Casting on St Michel" />
+                            <img src="../assets/images/antilence/Vinyl.png" alt="Casting on the vinyl" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anti-banner anti-container-one">
+                <div class="banner-container  banner-img-box clearfix">
+                    <div class="banner-text">
+                        <h1 class="banner-title">
+                            What is an anti-reflective coating?
+                        </h1>
+                        <p class="banner-text-content write-content">
+                            <span class="write-info">Reviewed by : Dr. Matthew Miller, OD on May 19th, 2022</span>
+                        </p>
+                        <p class="banner-text-content">
+
+                            All single vision EyeBuyDirect antis come standard with an anti-reflective coating.
+                            High-index antis naturally reflect more light, so this is an important addition if you’re
+                            interested in thinner antis. </p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="../assets/images/image10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="anti-banner anti-continer-two atcontainer clearfix">
+                <div class="banner-container clearfix">
+                    <div class="banner-text">
+                        <h1 class="banner-title">Anti-Reflective Coating Glasses Benefits: </h1>
+                        <div class="container-two-content clearfix">
+                            <p class="clearfix flex container-two-content-one">
+                                <i class="anti-icon anti-icon-sun"></i>
+                                <span>Allows more light to reach your eyes, improving visual acuity.</span>
+                            </p>
+                            <p class="clearfix flex container-two-content-two">
+                                <i class="anti-icon anti-icon-car"></i>
+                                <span>Reduces vision-obstructing glare — extra important for driving.</span>
+                            </p>
+                            <p class="clearfix flex container-two-content-three">
+                                <i class="anti-icon anti-icon-eye"></i>
+                                <span>Makes your eyes more visible behind your antis, so your facial expressions are
+                                    easier
+                                    to see.</span>
+                            </p>
+                            <p class="clearfix flex container-two-content-four">
+                                <i class="anti-icon anti-icon-shield"></i>
+                                <span>On sunglasses, it prevents sunlight from reflecting into your eyes when the sun is
+                                    behind you.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dig-text">
+                <h2 class="dig-text-title">
+                    What is Blue Light? </h2>
+                <p class="dig-text-content">
+                    Contrary to UV light, blue light is emitted all around us, every day — both indoors and outdoors,
+                    from the screens on our digital device to the sun as the biggest source. Extended exposure to
+                    certain wavelengths may cause eye fatigue and discomfort, but don’t worry! Our blue light filtering
+                    glasses and computer screen glasses can reduce your exposure to potentially harmful blue light.
+                    Learn how to choose the best
+                    lenses for blue light prescription glasses. </p>
+            </div>
+
+            <div class="dig-container clearfix">
+                <div class="dig-container-left dig-container-text">
+                    <div class="text-box">
+                        <div class="text-container">
+                            <div class="text-content">
+                                <img alt="" class=" lazyloaded"
+                                    src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/icon-add.png?q=85"
+                                    data-src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/icon-add.png?q=85">
+                                <h2>
+                                    How Does Blue Light Affect Us? </h2>
+                                <p>
+                                    Our constant connection to our smartphones, tablets, and laptops may contribute to
+                                    headaches, sore eyes, and stiff necks — all symptoms of digital eyestrain. With the
+                                    majority of our waking hours spent in front of a screen, paired with harmful
+                                    blue-violet light* from digital devices, it’s no surprise that our eyes are working
+                                    harder than ever. </p>
+                                <p class="txt-margin">
+                                    *Disclaimer: Harmful blue-violet light is between 415-455nm. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dig-container-right dig-container-img">
+                    <div class="img-box">
+                        <img alt="How Does Blue Light Affect Us?" class=" lazyloaded"
+                            src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/dig-01-new.jpg?q=85"
+                            data-src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/dig-01-new.jpg?q=85">
+                    </div>
+                </div>
+            </div>
+
+            <div class="dig-container-three clearfix">
+                <div class="dig-container-left dig-container-img">
+                    <div class="img-box">
+                        <img alt="Protect Your Eyes with Blue Light Filtering Glasses" class=" lazyloaded"
+                            src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/dig-02-new.jpg?q=85"
+                            data-src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/dig-02-new.jpg?q=85">
+                    </div>
+                </div>
+                <div class="dig-container-right dig-container-text">
+                    <div class="text-box">
+                        <div class="text-container">
+                            <div class="text-content">
+                                <img alt="Blue Light Filtering Glasses" class="protect-img"
+                                    src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/icon-de.png?q=85"
+                                    data-src="https://img.ebdcdn.com/image/upload/static/images/prescription-lens/digital-protection/icon-de.png?q=85">
+                                <h2>
+                                    Protect Your Eyes with Blue Light Filtering Glasses </h2>
+                                <p>
+                                    Both our non-prescription and prescription blue light filtering glasses and
+                                    prescription computer glasses are designed to protect your eyes from extended
+                                    exposure to harmful blue-violet light. The premium features found in our EBDBlue
+                                    Plus, EBDBlue 360, and SightRelax lenses make the unavoidable hours of screen time
+                                    more comfortable, too. Whether you’re wearing them for gaming glasses, working into
+                                    the wee hours
+                                    of the night, or binge-watching your favorite show, blue light filtering glasses and
+                                    glasses for computer use are the way to go. </p>
+
+                                <div class="doctor-section clearfix">
+                                    <div class="doctor-txt">
+                                        <p class="txt">Many of my patients are spending more time on screens. I've
+                                            recommended they try blue light filtering glasses, and most agree they can
+                                            tell an improvement in their eye strain and fatigue levels.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anti-container-three">
+                <h2 class="container-three-title">
+                    antis featuring an anti-reflective coating </h2>
+                <p class="container-three-title-text">
+                    Here are some popular lens options that come standard with an anti-reflective coating: </p>
+                <div class="container clearfix">
+                    <ul class="anti-content-three anti-content-three-left">
+                        <li>
+                            <p class="anti-content-three-title">
+                                Standard single vision antis </p>
+                            <p class="anti-content-three-text">
+                                Glasses with single vision correction antis. They help with seeing either at a distance
+                                or near, depending on the wearer’s needs. </p>
+                            <a href="./order_page.html" title="Shop single-vision glasses">Shop single-vision
+                                glasses ></a>
+                        </li>
+
+                        <li>
+                            <p class="anti-content-three-title">
+                                Progressive / Premium Progressive </p>
+                            <p class="anti-content-three-text">
+                                Progressive antis are a type of bifocal lens that features a gradual change between near
+                                and distance vision correction. The premium version offers a wider field of vision. </p>
+                            <a href="./order_page.html" title="Shop progressive glasses">Shop progressive glasses
+                                ></a>
+                        </li>
+
+                        <li class="li-ebdblue">
+                            <p class="anti-content-three-title">
+                                Blue Light Filtering </p>
+                            <p class="anti-content-three-text">
+                                Blue light filtering antis filter out blue light emitted by digital screens. This color
+                                of light can cause eye strain and potentially result in permanent damage to your vision.
+                            </p>
+                            <a href="./order_page.html" title="Shop blue light filtering glasses">Shop blue light
+                                filtering glasses ></a>
+                        </li>
+                    </ul>
+                    <ul id="anti-border"></ul>
+
+                    <ul class="anti-content-three anti-content-three-right">
+                        <li>
+                            <p class="anti-content-three-title">
+                                All Reading </p>
+                            <p class="anti-content-three-text">
+                                Glasses with antis that help the wearer see things up close. Many people need reading
+                                antis as they get older due to a common condition called presbyopia. </p>
+                            <a href="./order_page.html" title="Shop reading glasses">Shop reading glasses ></a>
+                        </li>
+                        <li>
+                            <p class="anti-content-three-title">
+                                Transitions<sup>®</sup> </p>
+                            <p class="anti-content-three-text">
+                                Glasses with Transitions<sup>®</sup> antis automatically darken in sunny conditions and
+                                become clear when it’s darker. This allows them to work as both eyeglasses and
+                                sunglasses. </p>
+                            <a href="./order_page.html" title="Shop Transitions<sup>®</sup> glasses">Shop
+                                Transitions<sup>®</sup> glasses ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footerContainer">
+            <div class="footer-up">
+                <div class="footerImg">
+                    <img src="../assets/images/logo_white.png" alt="glasses">
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul>
+                            <li>About</li>
+                            <li>Product</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul id="">
+                            <li>Terms and Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Cookie Policy</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul id="">
+                            <li>Let's chat</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul id="">
+                            <li>
+                                <span>Let's keep in touch</span>
+                                <form action="/action_page.php">
+                                    <label for="emails"></label>
+                                    <input placeholder="Enter email" type="email" id="emails" name="emails" multiple>
+                                    <input type="submit">
+                                </form>
+                                <span>Let's be bright</span>
+                            </li>
+                            <br>
+                            <li>
+                                <i class="fa fa-instagram fa-3" aria-hidden="true"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-discord"></i>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <a style="color:white" href="mailto:yourfirstname@yourlastname.com">smarteyes@yourlastname.com</a>
+                <br>
+                <span>Get in touch!
+                    We’re available by phone () and chat everyday from 9 am - 6 pm PT.</span>
+                <line></line>
+                <br>
+                <span>&copy; Copyright 2022 Smart Eye!.</span>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/lence.js"></script>
+</body>
+
+</html>

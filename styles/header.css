@@ -1,0 +1,504 @@
+/* header design css */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    flex-direction: column;
+    color: green;
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav a:visited {
+    color: black;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+}
+
+.headerView img {
+    height: 120px;
+    float: left;
+}
+
+.headerView {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topNavBar {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    color: brown;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.topNavBar a {
+    font-size: 14px;
+    margin-right: 24px;
+}
+
+.headerButtons {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 16px
+}
+
+.headerButtons button {
+    height: 20px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+    display: flex;
+    border: 0px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+    font-size: 12px;
+    text-align: center;
+}
+
+.headerButtons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: brown;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: brown;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 280px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 14px 0 22px 0px;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-left: 16px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    color: green;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+input {
+    margin-right: 8px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content form {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#myImg:hover {
+    opacity: 0.5;
+}
+
+.row>.column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: auto;
+    max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    color: brown;
+    margin: 0;
+}
+
+
+
+@media only screen and (min-width: 850px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        background-color: lavenderblush;
+        font-size: x-large;
+        color: brown;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .headerView {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .topNavBar {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        height: 70px;
+        color: brown;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    header img {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        height: 100px;
+    }
+
+    .topNavBar a {
+        margin-left: 34px;
+        font-size: 16px;
+        color: brown;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    .headerButtons {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 0px
+    }
+
+    .headerButtons button {
+        margin-left: 16px;
+        padding: 16px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: green;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        font-size: 16px;
+        color: brown;
+        margin: 0;
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: transparent;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        color: brown;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: whitesmoke;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}

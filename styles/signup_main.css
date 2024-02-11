@@ -1,0 +1,319 @@
+/* to reset default styles of body  */
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #85FFBD; */
+    background-image: url('../assets/images/login_bh.jpeg');
+    /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+}
+
+/* for main section */
+main {
+    width: 500px;
+    height: 798px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 13px;
+    margin-top: 30px;
+}
+
+/* for heading in  main */
+main h2 {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    border-top: 1px solid;
+
+}
+
+.main-p {
+    text-align: center;
+    border-bottom: 1px solid rgb(154, 152, 152);
+    margin-top: 0px;
+    padding-bottom: 10px
+}
+
+
+/* for form container */
+.form-contianer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 370px;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+/* for all input in form  */
+.form-contianer input {
+    border-radius: 10px;
+    height: 25px;
+    border: 0px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(154, 152, 152);
+
+}
+
+/* for  input name */
+.input-name {
+    width: 159px;
+    margin-top: 10px;
+}
+
+/* for  input email */
+.input-email {
+    width: 335px;
+
+}
+
+/* for password input */
+.input-password {
+    width: 335px;
+
+}
+
+/* for gender label */
+.label-gender {
+    font-size: 18px;
+    margin-right: 20px;
+    vertical-align: center;
+    color: black;
+}
+
+/* for select gender */
+.form-contianer select {
+    width: 228px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 20px;
+    height: 25px;
+    text-align: center;
+}
+
+/* for input  date of birth */
+.input-dob {
+    width: 216px;
+    margin-left: 36px;
+    height: 25px;
+    text-align: center;
+}
+
+/* for submit button */
+.input-submit {
+    margin: auto;
+    text-align: center;
+    background-color: green;
+    color: white;
+    width: 200px;
+}
+
+/* for already account link */
+.already-account {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width:523px) {
+
+    /* for header  of page*/
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    header h1 {
+        text-align: center;
+        color: rgb(83, 83, 147);
+        margin-left: 20px;
+        font-size: 45px;
+    }
+
+    /* for main section */
+    main {
+        width: 90%;
+        height: 535px;
+        margin: auto;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 13px;
+    }
+
+    /* for heading in  main */
+    main h2 {
+        text-align: center;
+        border-bottom: 1px solid rgb(154, 152, 152);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* for form container */
+    .form-contianer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        height: 370px;
+        justify-content: space-between;
+        margin: auto;
+
+    }
+
+    /* for all input in form  */
+    .form-contianer input {
+        border-radius: 10px;
+        height: 25px;
+        border: 0px;
+        padding-left: 10px;
+        font-size: 16px;
+        border: 1px solid rgb(154, 152, 152);
+
+    }
+
+    /* for  input name */
+    .input-name {
+        width: 335px;
+        margin-top: 0px
+    }
+
+
+}
+
+@media screen and (max-width:403px) {
+
+    /* for header  of page*/
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    header h1 {
+        text-align: center;
+        color: rgb(83, 83, 147);
+        margin-left: 10px;
+        font-size: 45px;
+    }
+
+    /* for main section */
+    main {
+        width: 300px;
+        height: 535px;
+        margin: auto;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 13px;
+    }
+
+    /* for heading in  main */
+    main h2 {
+        text-align: center;
+        border-bottom: 1px solid rgb(154, 152, 152);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* for form container */
+    .form-contianer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 302px;
+        height: 370px;
+        justify-content: space-between;
+
+
+    }
+
+    /* for all input in form  */
+    .form-contianer input {
+        border-radius: 10px;
+        height: 25px;
+        border: 0px;
+        font-size: 14px;
+        margin: auto;
+        border: 1px solid rgb(154, 152, 152);
+        width: 250px;
+        margin: auto;
+    }
+
+    /* for  input name */
+    .form-contianer select {
+        width: 136px;
+        border-radius: 10px;
+        border: 1px solid black;
+        height: 25px;
+        margin: 10px 20px 0px 0px;
+        text-align: center;
+    }
+
+    /* for input  date of birth */
+    .form-contianer .input-dob {
+        width: 122px;
+        margin-right: 20px;
+    }
+
+    .label-gender {
+        width: 125px;
+        font-size: 14px;
+        vertical-align: center;
+        color: black;
+        margin: 10px 0px 0px 20px;
+    }
+
+}
+
+/* for error */
+.error {
+    color: white;
+    background-color: red;
+    /* text-align: center; */
+    margin: auto;
+    margin-top: 0px;
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black 5px;
+}
+
+.gender-div-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-logo-img {
+    width: 300px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#success {
+    background-color: rgb(127, 205, 127);
+    text-align: center;
+    font-size: 40px;
+}

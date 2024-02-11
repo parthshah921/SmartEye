@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/signup_main.css">
+  <script src="../js/signup.js"></script>
+
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div class="container">
+
+  <main>
+    <img src="../assets/images/logo-no-background.png" class="signup-logo-img" alt="">
+    <h2>Create a new account</h2>
+    <p class="main-p">its easy and quick</p>
+    <!-- form to take input for sign up -->
+    <form action="" class="form-contianer">
+      
+      <input class="input-name" type="text" placeholder="firstname" id="firstname" name="firstname">
+      <input class="input-name" type="text" placeholder="lastname" id="lastname" name="lastname">
+      <span class="error" id="err-name"> &nbsp;&nbsp;* invalid name</span>
+      <input class="input-email" type="text" placeholder="Mobile number or email" id="email" name="email">
+      <span class="error" id="err-mob">&nbsp;&nbsp;* invalid mobile number or email</span>
+      <input class="input-password" type="password" placeholder="new password" id="password" name="password">
+      <input class="input-password" type="password" placeholder="re-enter password" id="rpassword"  name="confirmpassword">
+      <span class="error" id="err-pass">&nbsp;&nbsp;* invalid password </span>
+      
+      <div class="gender-div-space">
+        <label for="Gender" class="label-gender">Gender :</label>
+        <select name="Gender-value" id="Gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+      <label for="dob" class="label-gender">DOB :</label>
+      <input type="date" class="input-dob input-dob-class" id="dob" name="dob-value">
+      
+      <span class="error" id="err-dob"> &nbsp;&nbsp;* enter date of birth</span>
+
+      <input type="submit" class="input-submit" id="signup-btn" value="Sign Up">
+    </form>
+    <p class="already-account"><a href="./index.html">Already have an account ?</a></p>
+
+  </main>
+  <!-- footer of the page -->
+ 
+
+</div>
+</body>
+
+</html>

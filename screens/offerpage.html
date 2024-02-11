@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offer Page</title>
+    <link rel="stylesheet" href="../styles/offer.css">
+    <link rel="stylesheet" href="../styles/header.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerView">
+            <header>
+                <img src="../assets/images/logo-no-background.png" alt="glasses">
+            </header>
+
+            <!--top navigation menu -->
+
+        </div>
+
+        <nav>
+            <div class="topNavBar">
+                <div class="dropdown">
+                    <button class="dropbtn">EyeGlasses
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../screens/HomeScreen.html">Men's Eyeglasses</a>
+                        <a href="../screens/HomeScreen.html">Women's Eyeglasses</a>
+                        <a href="../screens/HomeScreen.html">Kid's Eyeglasses</a>
+                        <a href="#">Featured</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sunglasses
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../screens/sunglasses.html">Prescription Sunglasses</a>
+                        <a href="../screens/sunglasses.html">Women's Sunglasses</a>
+                        <a href="../screens/sunglasses.html">Men's SunGlasses</a>
+                        <a href="#">Kid's SunGlasses</a>
+                        <a href="#">Featured</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Lenses
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../screens/LencesPage.html">Blue light Glasses</a>
+                        <a href="../screens/LencesPage.html">Bifocal Lenses</a>
+                        <a href="../screens/LencesPage.html">Progress Lenses</a>
+                        <a href="#">Prism Lenses</a>
+                        <a href="#">Coating</a>
+                    </div>
+                </div>
+                <a href="../screens/offerpage.html" style="color: brown;">Offers </a>
+            </div>
+            <div class="headerButtons">
+                <div class="dropdown">
+                    <button id="signInButton" class="dropbtn" onclick="openForm()">
+                        SignIn
+                    </button>
+
+                    <div id="myForm" class="dropdown-content">
+                        <form action="/action_page.php" class="form-container">
+                            <h1 style="margin-bottom:8px">Login</h1>
+
+                            <label for="email"><b style="margin-top: 8px">Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b style="margin-top: 8px">Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                </div>
+                <button onclick="openCartPage()">
+                    <img src="../assets/images/cart_96.png">
+                </button>
+                <button onclick="openProfilePage()">
+                    <img src="../assets/images/user.png">
+                </button>
+                <button onclick="openWishListPage()">
+                    <img src="../assets/images/wishlist.png">
+                </button>
+                <button onclick="openHelpPage()">
+                    <img src="../assets/images/help.png">
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <div class="ad_title">
+                <h1>Our offers</h1>
+                <p>Discover all of our online and in store discounts and offers below.</p>
+            </div>
+            <div class="exp_container offers">
+                <section class="modules">
+                    <div class="module eyewear all modA">
+                        <div class="col image" data-next="img2">
+                            <img src="../assets/images/brown_1.png" alt="20% Off Brown">
+                            <div class="tag">ONLINE ONLY</div>
+                        </div>
+                        <div class="col description">
+                            <div class="vAlign">
+                                <div class="category">
+                                    <p>prescription eyewear</p>
+                                </div>
+                                <h2>20% off Sunglasses*</h2>
+                                <p class="subtitle sm">*select styles<br><br></p>
+                                <p class="ct_smallPromo">APPLIES DIRECTLY IN CART</p>
+                                <p class="promoCode"></p>
+                                <div class="flex">
+                                    <div class="cta one">
+                                        <a class="button-medium-blue-fill" href="./sunglasses.html"
+                                            data-element-id="D_OffersCLP_Promo1_CTA" data-description="20%OffSunglasses"
+                                            title="shop 20% sunglasses offer">shop sunglasses</a>
+                                    </div>
+                                </div>
+                                <div class="seedet" id="seedetB">
+                                    <span tabindex="0">See details</span>
+                                    <div class="arrow-dwn"></div>
+                                    <div class="arrow-up"></div>
+                                </div>
+                                <div class="details detailsB">
+                                    <p>
+                                        In Quebec, completed eyewear sold by Independent Doctor of Optometry.
+                                        20% off select non-Rx sunglasses. Cannot be combined with other bonus
+                                        offers or $40 Off Additional Pair of Non-Prescription Sun promotion,
+                                        previous purchase or ready-made readers. Offer valid 11/3/2022 through
+                                        11/6/2022.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="module eyewear all modB">
+                        <div class="col image   ">
+                            <img src="https://media.lenscrafters.com/2022/Calendar/Week_09_March/Designer_Sale/D_OfferPage.jpg"
+                                alt="Designer sale">
+                            <div class="tag">online &amp; in-store</div>
+                        </div>
+                        <div class="col description">
+                            <div class="vAlign">
+                                <div class="category">
+                                    <p>Eyeglasses &amp; Prescription Sunglasses</p>
+                                </div>
+                                <h2>50% off <br>frame + lenses</h2>
+                                <p class="subtitle sm">Selected styles only.<br><br></p>
+                                <p class="ct_smallPromo">APPLIES DIRECTLY IN CART</p>
+                                <p class="promoCode"></p>
+                                <div class="flex">
+                                    <div class="cta one">
+                                        <a class="button-medium-blue-fill" href="./order_page.html"
+                                            data-element-id="D_OffersCLP_Promo3_CTA" data-description="DesignerSale"
+                                            title="shop Designer sale">shop now</a>
+                                    </div>
+                                    <div class="cta two">
+                                        <a class="button-medium-blue-fill" href="./order_page.html"
+                                            data-element-id="D_OffersCLP_Promo3_CTA" data-description="FindAStore"
+                                            title="Find a store">FIND A STORE</a>
+                                    </div>
+                                </div>
+                                <div class="seedet" id="seedetA">
+                                    <span tabindex="0">See details</span>
+                                    <div class="arrow-dwn"></div>
+                                    <div class="arrow-up"></div>
+                                </div>
+                                <div class="details detailsA">
+                                    <p>
+                                        In Quebec, complete eyewear sold by Independent Doctor of Optometry. Choose from
+                                        select designer frames and receive 50% off a complete pair (frame and lenses) or
+                                        a frame only purchase. Frame selection varies, exclusions apply. Cannot be
+                                        combined with vision insurance benefits, other offers, previous purchases,
+                                        readers or non-prescription sunglasses. Valid on multiple pairs. Valid
+                                        prescription required. Cartier®, Lindberg®, Oakley® Kato, and Oliver Peoples
+                                        frames excluded. Additional lens exclusions may apply, see store associate for
+                                        details. Void where prohibited. Discounts are off tag price. Taxes extra. No
+                                        cash value. 50% off frame only valid online only. Insurance not accepted online.
+                                        Valid at participating locations. See store associate for expiration date.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="module eyewear all modA">
+                        <div class="col image">
+                            <img src="https://media.lenscrafters.com/2020/Campaigns/GVP/LC_D_OfferLP_GVP_1020.png"
+                                alt="prescription eyewear">
+                            <div class="tag">online &amp; in-store</div>
+                        </div>
+                        <div class="col description">
+                            <div class="vAlign">
+                                <div class="category">
+                                    <p>prescription eyewear</p>
+                                </div>
+                                <h2>Great Value Package<br>
+                                </h2>
+                                <p class="subtitle sm">Complete pair (frame + lenses) starting <br>at $199 Single Vision
+                                    &amp; $299 Premium Progressive<br><br>$0 Out-of-Pocket with Vision
+                                    Insurance*<br><br></p>
+                                <p class="subtitle sm">Includes any Armani Exchange, Sferoflex, Chaps or LensCrafters
+                                    Collection frame.<br><br></p>
+                                <p class="promoCode"></p>
+                                <div class="flex">
+                                    <div class="cta one">
+                                        <a class="button-medium-blue-fill" href="./order_page.html"
+                                            data-element-id="D_OffersCLP_Promo6_CTA" data-description="ShopNow"
+                                            title="Shop Now Great Value Package">SHOP NOW</a>
+                                    </div>
+                                    <div class="cta two">
+                                        <a class="button-medium-blue-fill" href="./order_page.html"
+                                            data-element-id="D_OffersCLP_Promo6_CTA" data-description="FindAStore"
+                                            title="Find a store">FIND A STORE</a>
+                                    </div>
+                                </div>
+                                <div class="seedet" id="seedetC">
+                                    <span tabindex="0">See details</span>
+                                    <div class="arrow-dwn"></div>
+                                    <div class="arrow-up"></div>
+                                </div>
+                                <div class="details detailsC">
+                                    <p>
+                                        In Quebec, completed eyewear sold by Independent Doctor of Optometry. Great
+                                        Value Package includes any Armani Exchange, Sferoflex, or LensCrafters
+                                        Collection frame.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- popup-wrapper  -->
+            <div class="popup-wrapper popup-visit-vision popup-show" id="popup-window">
+                <div class="popup-container">
+                    <div class="popup-main">
+                        <div class="popup-content popup-visit">
+                            <div class="first-popup-img">
+                                <div class="img-box">
+                                    <img src="https://img.ebdcdn.com/image/upload/static/images/index/fvp-holiday-banner.jpg?q=85"
+                                        alt="Your Holiday, Your Way">
+                                </div>
+                            </div>
+                            <div id="first-visit-popup-full" class="first-visit-popup-full-a clearfix">
+                                <div class="first-popup-text">
+                                    <div class="first-info">Want 15% Off?</div>
+                                    <div class="first-title">
+                                        Plus FREE shipping<br> and exclusive offers!
+                                    </div>
+                                    <div class="second-title">
+                                        Enter your email address to make it happen. </div>
+                                    <div class="button-box">
+                                        <div class="field-container">
+                                            <label class="enter-label" for="email-coupon">email
+                                                address</label>
+                                            <input type="text" name="email" id="email-coupon" class="email-coupon"
+                                                placeholder="Email address">
+                                            <input type="hidden" name="email_type" value="firstvisit">
+                                        </div>
+                                        <button id="coupon-subscribe">Get Coupon</button>
+                                        <button id="cancle-popup" value="Cancel">Cancel</button>
+                                    </div>
+                                    <div id="email-dialog">
+                                        <p>We've sent to your email.</p>
+                                        <p id="email-msg"></p>
+                                        <p>Congratulations you get a new coupon</p>
+                                    </div>
+                                    <div id="email-dialog-err">
+                                        <p id="email-msg-err"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-wrapper  -->
+
+            <div class="little-popup">
+                <div class="fvp-final-img">
+                    <div class="img-box">
+                        <img src="../assets/images/logo-no-background.png" alt="Your Holiday, Your Way">
+                    </div>
+                </div>
+                <div class="coupon-icon button-medium-blue-fill">Get Your Coupon</div>
+            </div>
+
+            <div class="bottom-info">
+                <div class="exp_container">
+                    <div class="flex">
+                        <div class="col">
+                            <h4>LOOKING FOR INSURANCE?</h4>
+                            <p>Our stores can check your eye insurance plan <br> to see what savings you're eligible
+                                for and we'll<br> help you handle the paperwork too.</p>
+                            <a href="../screens/aboutus.html" data-element-id="D_OffersCLP_Bottom_CTA"
+                                data-description="Insurance" aria-label="Looking for insurance? learn more">learn
+                                more</a>
+                        </div>
+                        <div class="col">
+                            <h4>MEMBERS WITH BENEFITS: JOIN THE CLUB</h4>
+                            <p>If you're a member of CAA, we've got savings that come with your membership. Discover
+                                cost-saving benefits on eye exams and eyeglasses.</p>
+                            <div class="flex">
+                                <a href="../screens/aboutus.html" data-element-id="D_OffersCLP_Bottom_CTA"
+                                    data-description="CAA">caa members</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4>STILL HAVE QUESTIONS?</h4>
+                            <p>We'd love to hear from you. Send us an email,<br> give us a call, write us a letter,
+                                or just stop by a<br> store near you.</p>
+                            <a href="../screens/aboutus.html" data-element-id="D_OffersCLP_Bottom_CTA"
+                                data-description="ContactUs">contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footerContainer">
+            <div class="footer-up">
+                <div class="footerImg">
+                    <img src="../assets/images/logo_white.png" alt="glasses">
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul>
+                            <li>About</li>
+                            <li>Product</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul>
+                            <li>Terms and Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Cookie Policy</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul>
+                            <li>Let's chat</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                    <li>
+                        <ul>
+                            <li>
+                                <span>Let's keep in touch</span>
+                                <form action="/action_page.php">
+                                    <label for="emails"></label>
+                                    <input placeholder="Enter email" type="email" id="emails" name="emails" multiple>
+                                    <input type="submit">
+                                </form>
+                                <span>Let's be bright</span>
+                            </li>
+                            <br>
+                            <li>
+                                <i class="fa fa-instagram fa-3" aria-hidden="true"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-discord"></i>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footerMenu1">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <a style="color:white" href="mailto:yourfirstname@yourlastname.com">smarteyes@yourlastname.com</a>
+                <br>
+                <span>Get in touch!
+                    We’re available by phone () and chat everyday from 9 am - 6 pm PT.</span>
+                <line></line>
+                <br>
+                <span>&copy; Copyright 2022 Smart Eye!.</span>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/offer.js"></script>
+</body>
+
+</html>

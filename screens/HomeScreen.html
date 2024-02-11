@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eye-Glasses</title>
+  <link rel="shortcut icon" href="../assets/images/eyeglass.png">
+  <script src="../js/HomeScreen.js"></script>
+  <link rel="stylesheet" href="../styles/HomeScreen.css">
+  <link rel="stylesheet" href="../styles/header.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="headerView">
+      <!-- Header part with logo -->
+      <header>
+        <img src="../assets/images/logo-no-background.png" alt="glasses">
+      </header>
+    </div>
+
+    <!--Top Navigation menu -->
+    <nav>
+      <div class="topNavBar">
+        <div class="dropdown">
+          <button class="dropbtn">EyeGlasses
+          </button>
+          <!--DropDown menu -->
+          <div class="dropdown-content">
+            <a href="../screens/HomeScreen.html">Men's Eyeglasses</a>
+            <a href="../screens/HomeScreen.html">Women's Eyeglasses</a>
+            <a href="../screens/HomeScreen.html">Kid's Eyeglasses</a>
+            <a href="#">Featured</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Sunglasses
+          </button>
+          <div class="dropdown-content">
+            <a href="../screens/sunglasses.html">Prescription Sunglasses</a>
+            <a href="../screens/sunglasses.html">Women's Sunglasses</a>
+            <a href="../screens/sunglasses.html">Men's SunGlasses</a>
+            <a href="#">Kid's SunGlasses</a>
+            <a href="#">Featured</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Lenses
+          </button>
+          <div class="dropdown-content">
+            <a href="../screens/LencesPage.html">Blue light Glasses</a>
+            <a href="../screens/LencesPage.html">Bifocal Lenses</a>
+            <a href="../screens/LencesPage.html">Progress Lenses</a>
+            <a href="#">Prism Lenses</a>
+            <a href="#">Coating</a>
+          </div>
+        </div>
+        <a href="../screens/offerpage.html" style="color: brown;">Offers </a>
+      </div>
+
+      <!--Header buttons of icon -->
+      <div class="headerButtons">
+        <div class="dropdown">
+          <button id="signInButton" class="dropbtn" onclick="openForm()">
+            SignIn
+          </button>
+
+          <div id="myForm" class="dropdown-content">
+            <form action="/action_page.php" class="form-container">
+              <h1 style="margin-bottom:8px">Login</h1>
+
+              <label for="email"><b style="margin-top: 8px">Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b style="margin-top: 8px">Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        </div>
+        <button onclick="openCartPage()">
+          <img src="../assets/images/cart_96.png">
+        </button>
+        <button onclick="openProfilePage()">
+          <img src="../assets/images/user.png">
+        </button>
+        <button onclick="openWishListPage()">
+          <img src="../assets/images/wishlist.png">
+        </button>
+        <button onclick="openHelpPage()">
+          <img src="../assets/images/help.png">
+        </button>
+      </div>
+    </nav>
+    <main>
+
+      <!-- Showing slideshow of ads -->
+      <div class="adBlock">
+        <!-- <img src="../assets/images/ads/ad2.webp"><img> -->
+        <img src="../assets/images/ads/ad2.webp" name="slideshow" id="slideshow" />
+      </div>
+
+      <!-- main content of the page -->
+      <div class="contentBlock">
+        <section>
+          <div class="ad_title">
+            <h1>Designs Of The Day</h1>
+          </div>
+
+          <div class="mainbox" id="mainbox">
+
+            <!--Showing grid view -->
+            <div class="rowContainer">
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g16.webp" id="myImg" onclick="openModal();currentSlide(1)">
+                </div>
+                <div class="glass_text">
+                  <h1>Ray-Ban - Classic</h1>
+                </div>
+                <div class="price_box">
+                  <p>50$ </p>
+                  <button id="addToCartButton" class="addToCart" onclick="">Add To Cart</button>
+                  <img id="wishList" src="../assets/images/wishlist.png" onclick="changeImage()" />
+                </div>
+              </div>
+
+              <!--Showing grid view -->
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g17.webp" id="myImg" onclick="openModal();currentSlide(2)">
+                </div>
+                <div class="glass_text">
+                  <h1>Ray-Ban - Retro
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 70$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img id="" src="../assets/images/wishlist.png" onclick="changeImage()" />
+                </div>
+              </div>
+
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g18.webp" id="myImg" onclick="openModal();currentSlide(3)">
+                </div>
+                <div class="glass_text">
+                  <h1>Oakley - Classic
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 60$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+            </div>
+            <div class="rowContainer">
+              <div class="adVideo">
+                <video width="500px" height="400px" controls="controls" autoplay>
+                  <source src="../assets/images/ads/adVideo.webm" type="video/mp4">
+                </video>
+                <h2 style="color: black;margin-left: 20px;">Exclusive!! Glasses and SunGlasses for your loved ones</h2>
+              </div>
+            </div>
+            <div class="rowContainer">
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g19.webp" id="myImg" onclick="openModal();currentSlide(3)">
+                </div>
+                <div class="glass_text">
+                  <h1>Versace - Bold</h1>
+                </div>
+                <div class="price_box">
+                  <p>40$</p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g20.webp" id="myImg" onclick="openModal();currentSlide(2)">
+                </div>
+                <div class="glass_text">
+                  <h1>Ray-Ban - Classic
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 80$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g21.webp" id="myImg" onclick="openModal();currentSlide(1)">
+                </div>
+                <div class="glass_text">
+                  <h1>Oakley </h1>
+                </div>
+                <div class="price_box">
+                  <p> 60$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+            </div>
+
+            <!--ads -->
+            <div class="adMergeBlock">
+              <img src="../assets/images/ads/ad5.webp"><img>
+              <img src="../assets/images/ads/ad6.webp"><img>
+              <img src="../assets/images/ads/ad7.webp"><img>
+            </div>
+
+            <div class="ad_title">
+              <h1>20% off on the selected glassess</h1>
+            </div>
+
+            <div class="rowContainer">
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g7.webp" id="myImg" onclick="openModal();currentSlide(1)">
+                </div>
+                <div class="glass_text">
+                  <h1>Versace - Bold</h1>
+                </div>
+                <div class="price_box">
+                  <p>40$</p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g8.webp" id="myImg" onclick="openModal();currentSlide(2)">
+                </div>
+                <div class="glass_text">
+                  <h1>Lenskart
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 30$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g9.webp" id="myImg" onclick="openModal();currentSlide(3)">
+                </div>
+                <div class="glass_text">
+                  <h1>Armani ExchaNGE
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 80$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="rowContainer">
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g10.webp" id="myImg" onclick="openModal();currentSlide(1)">
+                </div>
+                <div class="glass_text">
+                  <h1>Lenskart</h1>
+                </div>
+                <div class="price_box">
+                  <p>100$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g11.webp" id="myImg" onclick="openModal();currentSlide(2)">
+                </div>
+                <div class="glass_text">
+                  <h1>Ray-Ban
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 90$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g12.webp" id="myImg" onclick="openModal();currentSlide(3)">
+                </div>
+                <div class="glass_text">
+                  <h1>Gucci
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 50$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+            </div>
+
+            <div class="adBlock">
+              <img src="../assets/images/ads/ad2.webp" name="slideshow" id="slideshow" />
+            </div>
+
+
+            <div class="rowContainer">
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g13.webp" id="myImg" onclick="openModal();currentSlide(1)">
+                </div>
+                <div class="glass_text">
+                  <h1>Ray-Ban</h1>
+                </div>
+                <div class="price_box">
+                  <p>40$ </p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g14.webp" id="myImg" onclick="openModal();currentSlide(2)">
+                </div>
+                <div class="glass_text">
+                  <h1>Armani Exchange
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p>90$</p>
+                  <button id="addToCartButton" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+
+              <div class="colContainer">
+                <div class="img_container">
+                  <img src="../assets/images/glasses/g15.webp" id="myImg" onclick="openModal();currentSlide(3)">
+                </div>
+                <div class="glass_text">
+                  <h1>Oakley
+                  </h1>
+                </div>
+                <div class="price_box">
+                  <p> 80$</p>
+                  <button id="" class="addToCart" onclick="">Add To Cart</button>
+                  <img src="../assets/images/wishlist.png">
+                </div>
+              </div>
+            </div>
+
+            <!-- The modal/Lightbox -->
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="../assets/images/glasses/g16.webp" style="width:100%;height:100%;border-radius: 30px;">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="../assets/images/glasses/g17.webp" style="width:100%;height:100%;border-radius: 30px;">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="../assets/images/glasses/g18.webp" style="width:100%;height:100%;border-radius: 30px;">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="../assets/images/glasses/g19.webp" style="width:100%;height:100%;border-radius: 30px;">
+                </div>
+
+                <!-- Next/previous controls -->
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                  <img class="demo" src="../assets/images/glasses/g16.webp" onclick="currentSlide(1)" alt="Nature">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="../assets/images/glasses/g17.webp" onclick="currentSlide(2)" alt="Snow">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="../assets/images/glasses/g18.webp" onclick="currentSlide(3)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="../assets/images/glasses/g19.webp" onclick="currentSlide(4)" alt="Lights">
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer part -->
+    <footer class="footerContainer">
+      <div class="footer-up">
+        <div class="footerImg">
+
+          <img src="../assets/images/logo_white.png" alt="glasses">
+
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul>
+              <li>About</li>
+              <li>Product</li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul id="">
+              <li>Terms and Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Cookie Policy</li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul id="">
+              <li>Let's chat</li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul id="">
+              <li>
+                <span>Let's keep in touch</span>
+                <form action="/action_page.php">
+                  <label for="emails"></label>
+                  <input placeholder="Enter email" type="email" id="emails" name="emails" multiple>
+                  <input type="submit">
+                </form>
+                <span>Let's be bright</span>
+              </li>
+              <br>
+              <li>
+                <i class="fa fa-instagram fa-3" aria-hidden="true"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-discord"></i>
+              </li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <a style="color:white" href="mailto:yourfirstname@yourlastname.com">smarteyes@yourlastname.com</a>
+        <br>
+        <span>Get in touch!
+          We’re available by phone () and chat everyday from 9 am - 6 pm PT.</span>
+        <line></line>
+        <br>
+        <span>&copy; Copyright 2022 Smart Eye!.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

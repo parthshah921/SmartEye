@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.png">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <script src="../js/profilr_page.js"></script>
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/profileScreen.css">
+
+</head>
+
+<body>
+     <!--Container class -->
+  <div class="container">
+     <!--HeaderView class -->
+    <div class="headerView">
+      <header>
+        <img src="../assets/images/logo-no-background.png" alt="glasses">
+      </header>
+      <!--top navigation menu -->
+    </div>
+  
+     <!--Navigation  -->
+    <nav>
+      <div class="topNavBar">
+        <div class="dropdown">
+          <button class="dropbtn">EyeGlasses
+          </button>
+           <!--Header Dropdown-->
+          <div class="dropdown-content">
+            <a href="../screens/HomeScreen.html">Men's Eyeglasses</a>
+            <a href="../screens/HomeScreen.html">Women's Eyeglasses</a>
+            <a href="../screens/HomeScreen.html">Kid's Eyeglasses</a>
+            <a href="#">Featured</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Sunglasses
+          </button>
+          <div class="dropdown-content">
+            <a href="../screens/sunglasses.html">Prescription Sunglasses</a>
+            <a href="../screens/sunglasses.html">Women's Sunglasses</a>
+            <a href="../screens/sunglasses.html">Men's SunGlasses</a>
+            <a href="#">Kid's SunGlasses</a>
+            <a href="#">Featured</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Lenses
+          </button>
+          <div class="dropdown-content">
+            <a href="../screens/LencesPage.html">Blue light Glasses</a>
+            <a href="../screens/LencesPage.html">Bifocal Lenses</a>
+            <a href="../screens/LencesPage.html">Progress Lenses</a>
+            <a href="#">Prism Lenses</a>
+            <a href="#">Coating</a>
+          </div>
+        </div>  
+        <a href="../screens/offerpage.html" style="color: brown;">Offers </a>
+      </div>
+
+         <!--Header Buttons-->
+      <div class="headerButtons">
+        <div class="dropdown">
+          <button id="signInButton" class="dropbtn" onclick="openForm()">
+            SignIn
+          </button>
+
+          <div id="myForm" class="dropdown-content">
+            <form action="/action_page.php" class="form-container">
+              <h1 style="margin-bottom:8px">Login</h1>
+
+              <label for="email"><b style="margin-top: 8px">Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b style="margin-top: 8px">Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        </div>
+           <!--Buttons and their clicking events-->
+        <button onclick="openCartPage()"> 
+          <img src="../assets/images/cart_96.png">
+        </button>
+        <button onclick="openProfilePage()"> 
+          <img src="../assets/images/user.png">
+        </button>
+        <button onclick="openWishListPage()">
+          <img src="../assets/images/wishlist.png">
+        </button>
+        <button onclick="openHelpPage()">
+          <img src="../assets/images/help.png">
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main_container">
+        <!--handling grid view for showing image and info  -->
+        <div id="parentView">
+          <div class="photoView">
+            <div class="inside_view">
+              <img class="zoom" src="../assets/images/profile_image.jpeg">
+              <h2>Parth Shah</h2>
+              <p class="profileContentSize" id="email"><strong class="">Email : </strong> </p>
+              <p class="profileContentSize" id="contactNo"><strong class="">Contact No :</strong> </p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="subView">
+          <div>
+            <p id="gender"><strong>Gender :</strong> </p>
+            <p id="dob"><strong>Date Of Birth :</strong> </p>
+
+            <p><strong>Address : </strong></p>
+            <address id="address1">
+              <b> * </b> <br>
+            </address>
+
+            <address id="address2">
+              <b> * </b> <br>
+
+            </address>
+            <p id="rewards"><strong>Rewards :</strong> </p>
+            <p id="newsletter_subscription"><strong>Newsletter subscription: </strong> </p>
+            <p id="preferences"><strong class="">Preferences :</strong> </p>
+          </div>
+
+             <!--make table layout  -->
+          <div class="tableLayout">
+            <p><strong class="">Prescriptions :</strong> </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>RX</th>
+                  <th>SPX</th>
+                  <th>CYL</th>
+                  <th>AXIS</th>
+                  <th>PRISM</th>
+                  <th>BASE</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>O.D.</td>
+                  <td>-2.00</td>
+                  <td>-1.00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>O.S.</td>
+                  <td>-2.75</td>
+                  <td>-1.75</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+
+                  <td colspan="2">P.D.</td>
+                  <td>4</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+
+            </table>
+          </div>
+
+
+        </div>
+      </div>
+        <!--bottom view for rewards -->
+      <div class="bottomView">
+      <div class="focusRewards">
+        <h2>Focus Rewards </h2>
+        <h5>Our Loyalty Program awaits! Here’s something to perk you up:</h5>
+        <div class="box">
+
+          <div class="focusInsideContainer">
+            <h4>Welcome Perk</h4>
+            <p>30% off + Free Shipping </p>
+            <p><strong> Copy: </strong> WS6F26VZ5C</p>
+          </div>
+
+          <div class="discounts">
+            <p>SILVER BRIGHT PERKS</p>
+            <div class="rowContainer">
+              <img src="../assets/images/upgrade_gift.webp" href="">
+              <p>Upgrade gift</p>
+              <label>free case</label>
+            </div>
+            <div class="rowContainer">
+              <img src="../assets/images/anniversary_discount.webp" href="">
+              <p>Anniversary discount</p>
+              <label>15% off sitewide</label>
+            </div>
+            <div class="rowContainer">
+              <img src="../assets/images/birthday_freebie.png" href="">
+              <p> Birthday freebie</p>
+              <label>Buy one, get one </label>
+            </div>
+            <div class="rowContainer">
+              <img src="../assets/images/quarterly_sale.webp" href="">
+              <p> Quarterly sale</p>
+              <label>30% off sitewide</label>
+            </div>
+            <div class="rowContainer">
+              <img src="../assets/images/upgrade_gift.webp" href="">
+              <p>Early access</p>
+              <label>1 day before launch
+                + additional 15% off</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detailsView">
+      <div>
+      <p style="color: gray;font-weight: bold;margin: 8px;margin-top: 60px;">Last Order</p>
+      <div class="lastOrderView">
+       <h5>Oops! No orders have been placed yet.</h5>
+       <button>Start shopping</button>
+
+      </div>
+    </div>
+    <div>
+      <p style="color: gray;font-weight: bold;margin: 8px;margin-top: 60px;">Latest Prescription</p>
+      <div class="prescriptionView">
+       <h5>Oops! No prescriptions have been saved yet..</h5>
+       <p>Don't have a current prescription?</p>
+       <button>Enter your prescription</button>
+       <a href="./HomeScreen.html" style="margin-top: 16px;">Find eye doctors near you</a>
+
+      </div>
+    </div>
+   <img src="../assets/images/charity.webp" href="">
+      </div>
+    </div>
+    
+    </main>
+
+     <!--Footer part -->
+    <footer class="footerContainer">
+      <div class="footer-up">
+        <div class="footerImg">
+
+          <img src="../assets/images/logo_white.png" alt="glasses">
+          <!-- <div style="margin-left: 50px;font-size : 40px"><i>Smart Eye!</i></div> -->
+
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul id="">
+              <!-- <li><a href="">Home</a></li> -->
+              <li>About</li>
+              <li>Product</li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul id="">
+              <li>Terms and Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Cookie Policy</li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul id="">
+              <li>Let's chat</li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+          <li>
+            <ul id="">
+              <li>
+                <span>Let's keep in touch</span>
+                <form action="/action_page.php">
+                  <label for="emails"></label>
+                  <input placeholder="Enter email" type="email" id="emails" name="emails" multiple>
+                  <input type="submit">
+                </form>
+                <span>Let's be bright</span>
+              </li>
+              <br>
+              <li>
+                <i class="fa fa-instagram fa-3" aria-hidden="true"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-discord"></i>
+              </li>
+            </ul>
+          </li>
+        </div>
+        <div class="footerMenu1">
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <a style="color:white" href="mailto:yourfirstname@yourlastname.com">smarteyes@yourlastname.com</a>
+        <br>
+        <span>Get in touch!
+          We’re available by phone () and chat everyday from 9 am - 6 pm PT.</span>
+        <line></line>
+        <br>
+        <span>&copy; Copyright 2022 Smart Eye!.</span>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+
+  </script>
+
+</body>
+
+</html>

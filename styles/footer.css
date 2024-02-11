@@ -1,0 +1,101 @@
+/* footer css */
+.footerContainer {
+  height: 269px;
+  width: 100%;
+  margin-top: 21px;
+}
+
+.footer-up {
+  flex-direction: column;
+  size: 20;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: left;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.footerImg {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.footerMenu1 {
+  grid-column-start: 2;
+}
+
+.footer-up ul,
+li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+/* g. Footer bottom section */
+.footer-bottom {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+
+}
+
+
+.menu1 {
+  flex-direction: column;
+  /* width: 120px; */
+  display: inline-flex;
+}
+
+.menu2 {
+  flex-direction: column;
+}
+
+
+
+.footer-up {
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+/* p in footer */
+.footer-p {
+  margin-bottom: 0px;
+}
+
+/* g. Footer bottom section */
+
+.footer-bottom {
+  width: 100%;
+  /* padding: 25px 0; */
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0px;
+}
+
+hr {
+  border-top: 8px solid #bbb;
+
+}
+
+
+
+@media only screen and (max-width: 850px) {
+
+  .footer-up {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 296px;
+    height: 101px;
+
+  }
+}

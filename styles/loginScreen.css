@@ -1,0 +1,344 @@
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 0.1px black;
+    margin-bottom: 100px;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gainsboro;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.error {
+    color: red;
+    margin: auto;
+    margin-top: 4px;
+    display: none 
+}
+
+img {
+    height: 100px;
+    width: auto;
+}
+
+.creatAccount {
+    text-align: center;
+    font-size: small;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+}
+
+
+h1 {
+    color: gray;
+}
+
+#input-button {
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+
+
+.firstSubBlock {
+    margin-top: 16px;
+    position: relative;
+}
+
+  .fa-eye{
+    position: absolute;
+    top: 68%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+  }
+
+  .fa-envelope{
+    position: absolute;
+    top: 68%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+  }
+
+p {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: large;
+    color: gray;
+    display: flex;
+    align-self: flex-start;
+}
+
+input {
+    margin-left: 10px;
+    width: 250px;
+    height: 40px;
+    border: 1.5px solid gray;
+    border-radius: 4px;
+
+}
+
+.submitButton {
+    background-color: lightgrey;
+    height: 55px;
+    width: 300px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 0px solid black;
+    font-size: large;
+    color: gray;
+    box-shadow: 1px 1px 5px 0.1px black;
+}
+
+.submitBlock {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h5 {
+    display: flex;
+    align-self: flex-end;
+    color: gray;
+}
+
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color: whitesmoke;
+  color: black;
+  padding: 14px ;
+  border: none;
+}
+
+button:hover {
+  opacity:1;
+}
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: gainsboro;
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  background-color: transparent;
+  
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+ border-radius: 15px;
+  background-color: whitesmoke;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+
+@media only screen and (min-width: 850px) {
+
+    .container {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    header {
+        background-repeat: no-repeat;
+        background-position: left;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 12px;
+        flex-direction: column;
+        box-shadow: 1px 1px 5px 0.1px black;
+
+    }
+
+
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: url('../assets/images/login_bh.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height: 100vh;
+    }
+
+
+    
+    header img {
+        margin: 0 auto;
+        height: 120px;
+
+    }
+
+    .creatAccount {
+        text-align: center;
+        font-size: small;
+        color: black;
+        width: auto;
+        font-weight: bold;
+    }
+
+    h1 {
+        color: gray;
+    }
+
+    #input-button {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .firstSubBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 24px;
+        position: relative;
+    }
+
+    .fa-eye{
+        position: absolute;
+        top: 28%;
+        right: 4%;
+        cursor: pointer;
+        color: lightgray;
+      }
+    
+      .fa-envelope{
+        position: absolute;
+        top: 28%;
+        right: 4%;
+        cursor: pointer;
+        color: lightgray;
+      }
+
+    p {
+        text-align: left;
+        width: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: large;
+        color: gray;
+    }
+
+    input {
+        margin-left: 10px;
+        width: 250px;
+        height: 40px;
+        border: 1.5px solid gray;
+        border-radius: 4px;
+
+    }
+
+    .submitButton {
+        background-color: gainsboro;
+        height: 55px;
+        width: 300px;
+        opacity: 0.4;
+        justify-self: center;
+        align-items: center;
+        margin-top: 50px;
+        border-radius: 8px;
+        border: 0px solid black;
+        font-size: large;
+        color: black;
+        box-shadow: 1px 1px 5px 0.1px black;
+    }
+
+    .submitBlock {
+        margin-top: 24px;
+    }
+
+    h5 {
+        display: flex;
+        align-self: flex-end;
+        color: gray;
+    }
+
+
+
+
+}

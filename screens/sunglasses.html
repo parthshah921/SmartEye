@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Smart Eye/Sunglasses</title>
+  <link rel="stylesheet" href="../styles/sunglaesses.css">
+  <script src="../js/SunglassScreen.js"></script>
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+</head>
+
+<body>
+  <!-- main conatainer  -->
+  <div id="show_image_popup">
+        <img src="" alt="" id="bigImage">
+        <button class="closebtn">X</button>
+  </div>
+  <!-- images/logo-no-background.png" -->
+  <div class="container">
+    <!-- header  -->
+    <div class="headerView">
+      <!-- Header part with logo -->
+      <header>
+        <img src="../assets/images/logo-no-background.png" alt="glasses">
+      </header>
+
+      <!--top navigation menu -->
+   
+    </div>
+   
+    <nav>
+      <div class="topNavBar">
+        <div class="dropdown">
+          <button class="dropbtn">EyeGlasses
+          </button>
+          <div class="dropdown-content">
+            <a href="../screens/HomeScreen.html">Men's Eyeglasses</a>
+            <a href="../screens/HomeScreen.html">Women's Eyeglasses</a>
+            <a href="../screens/HomeScreen.html">Kid's Eyeglasses</a>
+            <a href="#">Featured</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Sunglasses
+          </button>
+          <div class="dropdown-content">
+            <a href="../screens/sunglasses.html">Prescription Sunglasses</a>
+            <a href="../screens/sunglasses.html">Women's Sunglasses</a>
+            <a href="../screens/sunglasses.html">Men's SunGlasses</a>
+            <a href="#">Kid's SunGlasses</a>
+            <a href="#">Featured</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Lenses
+          </button>
+          <div class="dropdown-content">
+            <a href="../screens/LencesPage.html">Blue light Glasses</a>
+            <a href="../screens/LencesPage.html">Bifocal Lenses</a>
+            <a href="../screens/LencesPage.html">Progress Lenses</a>
+            <a href="#">Prism Lenses</a>
+            <a href="#">Coating</a>
+          </div>
+        </div>  
+        <a href="../screens/offerpage.html" style="color: brown;">Offers </a>
+      </div>
+      <div class="headerButtons">
+        <div class="dropdown">
+          <button id="signInButton" class="dropbtn" onclick="openForm()">
+            SignIn
+          </button>
+
+          <div id="myForm" class="dropdown-content">
+            <form action="/action_page.php" class="form-container">
+              <h1 style="margin-bottom:8px">Login</h1>
+
+              <label for="email"><b style="margin-top: 8px">Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b style="margin-top: 8px">Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        </div>
+        <div style="margin-top: 16px;display: flex;flex-direction: row;">
+        <button onclick="openCartPage()"> 
+          <img src="../assets/images/cart_96.png">
+        </button>
+        <button onclick="openProfilePage()"> 
+          <img src="../assets/images/user.png">
+        </button>
+        <button onclick="openWishListPage()">
+          <img src="../assets/images/wishlist.png">
+        </button>
+        <button onclick="openHelpPage()">
+          <img src="../assets/images/help.png">
+        </button>
+      </div>
+    </div>
+    </nav>
+
+    <main>
+      <!-- list of SUNGLASSES -->
+      <div class="sunglasses-conatiner">
+        <h1 class="text-align-center"> SUNGLASSES</h1>
+        <div class="sunglass-list" id="sunglasses-list">
+        </div>
+      </div>
+      <!-- offer section -->
+      <figure><img src="../assets/images/sunglasses/home_page_1.jpg" alt="" class="main-img">
+        <p class="img-on-content"> <strong>20% OFF SUNGLASSES</strong> <br><br><a href="" class="img-on-btn">
+            <strong>Shop Now</strong> </a> </p>
+      </figure>
+      <!-- hit list of sunglasses -->
+      <div>
+        <h1 class="text-align-center">ALL TIME HIT</h1>
+        <div class="sunglass-list" id="allhit-list">
+        </div>
+      </div>
+      <!-- birthspecail part -->
+      <figure>
+        <img src="../assets/images/sunglasses/drawyourline.png" alt="" class="main-img">
+        <p class="img-on-content"> <strong>Birthday Special</strong> <br><br><a href="" class="img-on-btn"> <strong>Shop
+              Now</strong> </a> </p>
+      </figure>
+      <!-- limited edition list  -->
+      <div class="sunglasses-conatiner">
+        <h1 class="text-align-center"> LIMITED EDITION</h1>
+        <div class="sunglass-list" id="limited-edition">
+        </div>
+      </div>
+
+      <!-- Customise option -->
+      <figure>
+        <img src="../assets/images/sunglasses/popular9.jpg" alt="" class="main-img">
+        <p class="img-on-content"> <strong style="color: white;">Customise Your Glasses</strong> <br><br><a href=""
+            class="img-on-btn"> <strong>Shop
+              Now</strong> </a> </p>
+      </figure>
+
+    </main>
+    <!-- footer of page -->
+    <footer class="footerContainer">
+      <div class="footer-up">
+        <div class="footerImg">
+
+          <img src="../assets/images/sunglasses/logo_white.png" alt="glasses">
+          <!-- <div style="margin-left: 50px;font-size : 40px"><i>Smart Eye!</i></div> -->
+
+        </div>
+        <div class="footerMenu1">
+
+          <ul>
+            <!-- <li><a href="">Home</a></li> -->
+            <li>About</li>
+            <li>Product</li>
+          </ul>
+
+        </div>
+        <div class="footerMenu1">
+
+          <ul>
+            <li>Terms and Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+          </ul>
+
+        </div>
+        <div class="footerMenu1">
+
+          <ul>
+            <li>Let's chat</li>
+          </ul>
+
+        </div>
+        <div class="footerMenu1">
+
+          <ul>
+            <li>
+              <span>Let's keep in touch</span>
+              <form action="/action_page.php">
+                <label for="emails"></label>
+                <input placeholder="Enter email" type="email" id="emails" name="emails" multiple>
+                <input type="submit">
+              </form>
+              <span>Let's be bright</span>
+            </li>
+            <!-- <br> -->
+            <li>
+              <i class="fa fa-instagram fa-3" aria-hidden="true"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-discord"></i>
+            </li>
+          </ul>
+
+        </div>
+        <div class="footerMenu1">
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <a style="color:white" href="mailto:yourfirstname@yourlastname.com">smarteyes@yourlastname.com</a>
+        <br>
+        <span>Get in touch!
+          We’re available by phone () and chat everyday from 9 am - 6 pm PT.</span>
+        <br>
+        <span>&copy; Copyright 2022 Smart Eye!.</span>
+      </div>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>

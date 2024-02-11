@@ -1,0 +1,39 @@
+{
+"itemList" : [
+    {
+        "img_src" : "../assets/images/glasses/g14.webp",
+        "prod_desc" : "Ray-Ban - Classic",
+        "price" : "60$"
+    },
+    {
+        "img_src" : "../assets/images/glasses/g14.webp",
+        "prod_desc" : "Ray-Ban - Retro",
+        "price" : "100$"
+  
+    },
+    {
+        "img_src" : "../assets/images/glasses/g14.webp",
+        "prod_desc" : "Oakley - Classic",
+        "price" : "120$"
+    },
+  
+    {
+        "img_src" : "../assets/images/glasses/g16.webp",
+        "prod_desc" : "Oakley - Classic",
+        "price" : "123$"
+    }
+
+    {
+        "img_src" : "../assets/images/glasses/g17.webp",
+        "prod_desc" : "Oakley - Classic",
+        "price" : "220$"
+    },
+
+    {
+        "img_src" : "../assets/images/glasses/g18.webp",
+        "prod_desc" : "Oakley - Classic",
+        "price" : "124$"
+    }
+  
+  ]
+}

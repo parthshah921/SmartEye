@@ -1,0 +1,270 @@
+/* div for main  */
+.main-outer-container {
+    width: 700px;
+    background-color: #b8cbdb;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+main {
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+/* heading of main */
+.main-outer-container h1 {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid yellow;
+}
+
+.order-header {
+    margin-left: 20px;
+}
+
+.order-header div h3 {
+    margin: 0px;
+    color: #c22a2a;
+}
+
+.order-header div p {
+    margin: 0px;
+    color: #944343;
+}
+
+.order-header div p i {
+    color: #ef0bb1;
+    ;
+}
+
+/* container for order items */
+.item-list-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-list-container ul {
+    margin: 0px 20px 0px 20px;
+    padding: 0px;
+}
+
+.item-list-container ul li {
+    margin: 0px;
+}
+
+.item-list-container ul li h5 {
+    margin: 0px;
+    margin-top: 14px;
+}
+
+.item-list-container ul li p {
+    margin: 0px;
+    color: #4b4b4b;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* photo of items */
+.item-name-photo {
+    display: flex;
+}
+
+.item-name-photo figure img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.place-order-btn {
+    width: 200px;
+    margin: auto;
+}
+
+/* address form */
+.address-container form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.address-container h2 {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+}
+
+.address-container form label {
+    margin-left: 10px;
+    display: inline-block;
+    width: 150px;
+}
+
+.address-container form input {
+    border-radius: 10px;
+    height: 25px;
+    padding-left: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+/* for making respomsive */
+@media screen and (max-width:711px) {
+    .main-outer-container {
+        width: 100%;
+        background-color: gainsboro;
+        margin: auto;
+        border-radius: 10px;
+        margin: 8px;
+    }
+
+    body {
+        width: 100vw;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
+        background: linear-gradient(to right, #bdc3c7, #2c3e50);
+        
+    }
+
+    .container {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width:848px) {
+    body {
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
+        background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .removeitem {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:605px) {
+    .order-item {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.amount {
+    font-size: 30px;
+    text-align: end;
+    margin-right: 27px;
+}
+
+.subtotal {
+    margin-bottom: 0px;
+}
+
+.tax {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.total {
+    margin-top: 5px;
+}
+
+.large-image {
+    /* display: none; */
+    display: none;
+}
+
+.modal {
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+#show_image_popup {
+    position: fixed;
+
+    /*  so that not take place   */
+    top: 25%;
+    left: 25%;
+    z-index: 1000;
+    /*  adobe all elements   */
+
+    /* transform: translate(-50%, -50%);  */
+    /*  make center   */
+    /* background-color: #b1d1ec; */
+    display: none;
+    /*  to hide first time   */
+}
+
+#pop-up {
+    width: 90%;
+    height: 90%;
+}
+
+.closebtn {
+    position: relative;
+    left: -26px;
+    top: 0px;
+    color: red;
+}
